@@ -3,7 +3,9 @@
 ###A quick example
 
 ```php
-$API = new Dota_Tools_MarketAPI($id, $salt);
+require_once("DizardMarketAPI.php");
+
+$API = new DizardMarketAPI($id, $salt);
 
 $from = 10;
 print_r($API->getTrades($from));
