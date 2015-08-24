@@ -75,7 +75,7 @@ class DizardMarketAPI {
         $SGenerator = new SignatureGenerator($this->_salt);
         $params['signature'] = $SGenerator->assemble($params);
 
-        $url = 'http://dizard-test.boombet.ru/dota/market/v1/api';
+        $url = 'https://dizard.net/dota/market/v1/api';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POST, 1);
